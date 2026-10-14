@@ -1,0 +1,7 @@
+numpy<2
+pytest
+sentence-transformers==3.0.1
+transformers==4.44.2
+huggingface_hub<1.0
+google-genai
+python-dotenv
