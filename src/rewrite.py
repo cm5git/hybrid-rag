@@ -16,7 +16,7 @@ Query:"""
 
 class QueryRewriter:
     def __init__(self, cache_path: str = "data/cache/rewrites.json",
-                 model: str = "gemini-2.5-flash-lite", pause: float = 6.5):
+                 model: str = "gemini-3.5-flash-lite", pause: float = 6.5):
         from dotenv import load_dotenv
         from google import genai
 
