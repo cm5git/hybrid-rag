@@ -105,7 +105,7 @@ def parse_answer(raw: str, n_passages: int):
 
 class Generator:
     def __init__(self, retriever, corpus: dict, llm=None, n_passages: int = 5,
-                 max_chars: int = 1200):
+                 max_chars: int = 3000):
         self.retriever = retriever
         self.corpus = corpus
         self.llm = llm
