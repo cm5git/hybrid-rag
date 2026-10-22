@@ -1,17 +1,8 @@
----
-title: Hybrid RAG over SciFact
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # Hybrid RAG over SciFact
 
 Retrieval-augmented question answering over 5,183 biomedical abstracts (the SciFact corpus from BEIR). It combines keyword search (BM25, written from scratch) and dense embeddings (bge-small-en-v1.5) with reciprocal rank fusion, then generates answers that cite the passages they use, and declines when the passages do not contain the evidence.
 
-**Live demo:** _add the Hugging Face Space link here after deploying_
+**Live demo:** https://hybrid-rag.bluewater-bf71659a.uksouth.azurecontainerapps.io
 
 ## What is measured, and what is not
 
