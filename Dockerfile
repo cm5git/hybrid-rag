@@ -10,7 +10,7 @@ WORKDIR /home/user/app
 
 COPY --chown=user requirements-app.txt .
 # CPU-only torch keeps the image small; the pins match requirements.txt.
-RUN pip install --no-cache-dir --user torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu \
+RUN pip install --no-cache-dir --user torch==2.2.2 --extra-index-url https://download.pytorch.org/whl/cpu \
  && pip install --no-cache-dir --user -r requirements-app.txt
 
 COPY --chown=user . .
